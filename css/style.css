@@ -123,3 +123,13 @@ h2 {
 .grid-6 .box:nth-child(2) {
   grid-column: 1 / 2;
 }
+
+/* 7 */
+
+.grid-7 {
+  display: grid;
+  /* Necesitamos la altura para los row y el repeat*/
+  height: 500px;
+  /* grid-template-columns: 2fr repeat(3, 1fr); */
+  grid: repeat(2, 1fr) / repeat(3, 1fr);
+}
