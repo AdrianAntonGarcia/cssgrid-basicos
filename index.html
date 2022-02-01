@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,21 +8,26 @@
     <title>CSS Grid - Básicos</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@900&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
-<body>
+
+<body onload="jump()">
 
     <div class="caja-curso">
         <h1>CSS La Guía Completa - Flexbox, CSS Grid, SASS +20 proyectos</h1>
         <p>- Juan De la torre @codigoconjuan</p>
-        <a target="blank" rel="nofollow noopener noreferrer"  href="https://codigoconjuan.com/">Vísita mi sitio Codigo Con Juan</a>
+        <a target="blank" rel="nofollow noopener noreferrer" href="https://codigoconjuan.com/">Vísita mi sitio Codigo
+            Con Juan</a>
     </div>
 
 
     <div class="contenedor">
 
+        <p>Go to the
+            <a href="#seccion-9">seccion-9</a>.
+        </p>
         <h2>1.- Display Grid</h2>
 
         <div class="grid-1">
@@ -198,7 +204,7 @@
             </div>
         </div>
 
-        <h2>9.- Grid Areas</h2>
+        <h2 id="seccion-9">9.- Grid Areas</h2>
 
         <div class="grid-9">
             <div class="box">
@@ -239,7 +245,7 @@
             </div>
         </div>
 
-    
+
         <h2>11.- Alineación Grid </h2>
 
         <div class="grid-11">
@@ -282,4 +288,12 @@
     </div>
 
 </body>
+
+<script>
+    function jump() {
+        var top = document.getElementById('seccion-9').offsetTop; //Getting Y of target element
+        window.scrollTo(0, top);
+    }
+</script>
+
 </html>
