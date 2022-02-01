@@ -235,3 +235,12 @@ align-content */
   height: 300px;
   align-items: center;
 }
+
+/* 12 */
+/* solo van con unidades fijas, hay que usar min-max */
+.grid-12 {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 200px);
+  grid-template-columns: repeat(auto-fit, 200px);
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
